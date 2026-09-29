@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #f8fafc;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 7%;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1f2937;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #2563eb;
+}
+
+
+/* Main */
+
+main {
+    min-height: 700px;
+}
+
+.officer-section {
+    padding: 50px 7%;
+}
+
+
+/* Page Header */
+
+.page-header {
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+}
+
+.page-header h1 span {
+    color: #2563eb;
+}
+
+.page-header p {
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+/* Welcome Card */
+
+.welcome-card {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+}
+
+.small-text {
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.welcome-card h2 {
+    margin-bottom: 8px;
+}
+
+.welcome-card p:last-child {
+    color: #64748b;
+}
+
+.officer-icon {
+    width: 60px;
+
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+/* Statistics */
+
+.stats-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 22px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+}
+
+.stat-icon {
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    font-weight: bold;
+}
+
+.pending-icon {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.approved-icon {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.rejected-icon {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.stat-card p {
+    color: #64748b;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+.stat-card h2 {
+    font-size: 25px;
+}
+
+
+/* Applications Card */
+
+.applications-card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+
+/* Section Heading */
+
+.section-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.section-heading h2 {
+    margin-bottom: 6px;
+}
+
+.section-heading p {
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.section-heading a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Application Row */
+
+.application-row {
+    display: grid;
+
+    grid-template-columns: 1.2fr 1.5fr 0.8fr 0.7fr;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px 25px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.application-row:last-child {
+    border-bottom: none;
+}
+
+.application-info h3 {
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+.application-info p {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.approval-name {
+    color: #475569;
+
+    font-size: 14px;
+}
+
+
+/* Status */
+
+.status {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.status.pending {
+    background: #fef3c7;
+
+    color: #92400e;
+}
+
+.status.approved {
+    background: #dcfce7;
+
+    color: #166534;
+}
+
+.status.query {
+    background: #fee2e2;
+
+    color: #991b1b;
+}
+
+
+/* Review Button */
+
+.review-btn {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.review-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #111827;
+
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .application-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .officer-section {
+        padding: 40px 7%;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .welcome-card {
+        align-items: flex-start;
+    }
+
+    .application-row {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+}

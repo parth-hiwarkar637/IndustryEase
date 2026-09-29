@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Approval Details - IndustryEase</title>
+
+    <link rel="stylesheet" href="css/approval-details.css">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+
+<body data-page="approval-details">
+
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                IndustryEase
+            </div>
+
+            <div class="nav-links">
+
+                <a href="dashboard.html">Dashboard</a>
+
+                <a href="approvals.html">Approvals</a>
+
+                <a href="documents.html">Documents</a>
+
+                <a href="login.html">Logout</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main>
+
+        <a href="approvals.html" class="back-link">
+            ← Back to Approvals
+        </a>
+
+
+        <!-- Page Header -->
+
+        <section class="page-header">
+
+            <h1 id="approval-title">
+                Approval Details
+            </h1>
+
+            <p id="approval-description">
+                Detailed information about this approval.
+            </p>
+
+        </section>
+
+
+        <!-- Approval Information -->
+
+        <section class="details-card">
+
+            <h2>
+                Approval Information
+            </h2>
+
+
+            <div class="info-grid">
+
+
+                <div class="info-box">
+
+                    <strong>
+                        Approval Type
+                    </strong>
+
+                    <span id="approval-type">
+                        -
+                    </span>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <strong>
+                        Concerned Department
+                    </strong>
+
+                    <span id="department">
+                        -
+                    </span>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <strong>
+                        Application Fee
+                    </strong>
+
+                    <span id="fee">
+                        -
+                    </span>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <strong>
+                        Processing Time
+                    </strong>
+
+                    <span id="processing">
+                        -
+                    </span>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <strong>
+                        Eligibility
+                    </strong>
+
+                    <span id="eligibility">
+                        -
+                    </span>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <strong>
+                        Application Mode
+                    </strong>
+
+                    <span>
+                        Online
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Required Documents -->
+
+        <section class="details-card">
+
+            <h2>
+                Required Documents
+            </h2>
+
+            <ul
+                class="document-list"
+                id="documents">
+            </ul>
+
+        </section>
+
+
+        <!-- Application Process -->
+
+        <section class="details-card">
+
+            <h2>
+                Application Process
+            </h2>
+
+
+            <div class="process">
+
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        1
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Application
+                        </h3>
+
+                        <p>
+                            Enter your business and project information
+                            and submit the approval application.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Document Verification
+                        </h3>
+
+                        <p>
+                            The concerned government officer will verify
+                            the submitted documents.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Query / Inspection
+                        </h3>
+
+                        <p>
+                            If required, the officer may raise a query
+                            or request an inspection.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        4
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Final Decision
+                        </h3>
+
+                        <p>
+                            The government officer will approve or reject
+                            the application after verification.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Apply Section -->
+
+        <section class="apply-section">
+
+            <h2>
+                Ready to Apply?
+            </h2>
+
+            <p>
+                Start your application and upload the required documents.
+            </p>
+
+            <a href="documents.html" class="apply-btn" id="applyButton">
+                Apply Now →
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 IndustryEase. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+
+
+    <script src="js/api.js"></script>
+    <script src="js/applicant.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Queries - IndustryEase</title>
+
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body data-page="queries">
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                IndustryEase
+            </div>
+
+            <div class="nav-links">
+
+                <a href="officer-dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="application-review.html">
+                    Applications
+                </a>
+
+                <a href="queries.html" class="active">
+                    Queries
+                </a>
+
+                <a href="inspections.html">
+                    Inspections
+                </a>
+
+                <a href="login.html">
+                    Logout
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="queries-section">
+
+            <a
+                href="application-review.html"
+                class="back-link"
+            >
+                ← Back to Application
+            </a>
+
+
+            <div class="page-header">
+
+                <p class="page-label">
+                    Application Query
+                </p>
+
+                <h1>
+                    Raise a
+                    <span>Query</span>
+                </h1>
+
+                <p>
+                    Request additional information or clarification
+                    from the applicant.
+                </p>
+
+            </div>
+
+
+            <!-- Application Summary -->
+
+            <div class="application-card">
+
+                <div class="card-header">
+                    <div>
+                        <h2 id="queryApprovalName">Application</h2>
+                        <p id="queryReference"></p>
+                    </div>
+
+                    <span class="status pending" id="queryStatus">Pending</span>
+                </div>
+
+            </div>
+
+
+            <!-- Query Form -->
+
+            <div class="query-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Query Details
+                    </h2>
+
+                    <p>
+                        Enter the information that the applicant needs
+                        to provide or clarify.
+                    </p>
+
+                </div>
+
+
+                <form id="queryForm">
+
+
+                    <div class="form-group">
+
+                        <label for="queryType">
+                            Query Type
+                        </label>
+
+                        <select
+                            id="queryType"
+                            required
+                        >
+
+                            <option value="">
+                                Select Query Type
+                            </option>
+
+                            <option value="document">
+                                Document Clarification
+                            </option>
+
+                            <option value="information">
+                                Additional Information
+                            </option>
+
+                            <option value="correction">
+                                Information Correction
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="queryMessage">
+                            Query Message
+                        </label>
+
+                        <textarea
+                            id="queryMessage"
+                            rows="7"
+                            placeholder="Write your query clearly..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="responseDate">
+                            Response Required By
+                        </label>
+
+                        <input
+                            type="date"
+                            id="responseDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-footer">
+
+                        <p>
+                            The applicant will be notified about this query.
+                        </p>
+
+                        <button type="submit">
+                            Send Query →
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- Previous Queries -->
+
+            <div class="previous-card">
+
+                <div class="card-header">
+                    <div>
+                        <h2>Previous Queries</h2>
+                        <p>Queries already raised on this application.</p>
+                    </div>
+                </div>
+
+                <div id="previousQueries"></div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 IndustryEase. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <script src="js/api.js"></script>
+    <script src="js/officer.js"></script>
+
+</body>
+
+</html>

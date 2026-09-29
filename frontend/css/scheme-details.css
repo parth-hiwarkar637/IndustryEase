@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #f8fafc;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 7%;
+
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: #2563eb;
+}
+
+.navbar nav a.active {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.details-section {
+    width: 86%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 40px 0 60px;
+}
+
+
+/* =========================
+   BACK LINK
+========================= */
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    text-decoration: none;
+
+    color: #6b7280;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   SCHEME HEADER
+========================= */
+
+.scheme-header {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 22px;
+
+    background: white;
+
+    padding: 30px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+
+    margin-bottom: 25px;
+}
+
+.scheme-icon {
+    width: 65px;
+    height: 65px;
+
+    min-width: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 14px;
+
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.header-content {
+    flex: 1;
+}
+
+.eyebrow {
+    font-size: 11px;
+
+    color: #2563eb;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+}
+
+.header-content h1 {
+    font-size: 30px;
+
+    color: #111827;
+
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    color: #6b7280;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+.status-badge {
+    display: inline-block;
+
+    background: #ecfdf5;
+
+    color: #047857;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   CONTENT CARD
+========================= */
+
+.content-card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 28px;
+
+    margin-bottom: 22px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+}
+
+.content-card h2 {
+    font-size: 20px;
+
+    color: #111827;
+
+    margin-bottom: 15px;
+}
+
+.content-card > p {
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.benefit-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 18px;
+
+    background: #f8fafc;
+
+    border-radius: 10px;
+}
+
+.benefit-icon {
+    width: 36px;
+    height: 36px;
+
+    min-width: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+}
+
+.benefit-item h3 {
+    font-size: 14px;
+
+    color: #374151;
+
+    margin-bottom: 6px;
+}
+
+.benefit-item p {
+    color: #6b7280;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   ELIGIBILITY
+========================= */
+
+.eligibility-list {
+    padding-left: 20px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    line-height: 2;
+}
+
+.eligibility-list li {
+    padding-left: 5px;
+}
+
+
+/* =========================
+   DOCUMENTS
+========================= */
+
+.documents-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.document-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 9px;
+
+    background: #fafafa;
+}
+
+.document-item span {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.document-item p {
+    color: #374151;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   APPLICATION PROCESS
+========================= */
+
+.process {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.process-step {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+}
+
+.step-number {
+    width: 35px;
+    height: 35px;
+
+    min-width: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.process-step h3 {
+    font-size: 14px;
+
+    color: #374151;
+
+    margin-bottom: 5px;
+}
+
+.process-step p {
+    color: #6b7280;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   ACTION BOX
+========================= */
+
+.action-box {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 25px 28px;
+
+    background: #eff6ff;
+
+    border: 1px solid #dbeafe;
+
+    border-radius: 14px;
+
+    margin-top: 28px;
+}
+
+.action-box h2 {
+    color: #1e3a8a;
+
+    font-size: 19px;
+
+    margin-bottom: 7px;
+}
+
+.action-box p {
+    color: #475569;
+
+    font-size: 13px;
+}
+
+.apply-button {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.apply-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
+.bottom-navigation {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 30px;
+}
+
+.bottom-navigation a {
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.back-button {
+    color: #6b7280;
+}
+
+.back-button:hover {
+    color: #2563eb;
+}
+
+.dashboard-button {
+    background: #2563eb;
+
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+}
+
+.dashboard-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: white;
+
+    border-top: 1px solid #e5e7eb;
+
+    color: #9ca3af;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .details-section {
+        width: 90%;
+    }
+
+    .scheme-header {
+        flex-direction: column;
+    }
+
+    .documents-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .action-box {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .apply-button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .bottom-navigation {
+        flex-direction: column;
+
+        gap: 15px;
+
+        align-items: stretch;
+    }
+
+    .dashboard-button {
+        text-align: center;
+    }
+
+}

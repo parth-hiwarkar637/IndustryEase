@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - IndustryEase</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body data-page="dashboard">
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                IndustryEase
+            </div>
+
+            <div class="nav-links">
+
+                <a href="dashboard.html">Dashboard</a>
+                 <a href="project.html">Project</a>
+                <a href="approvals.html">Approvals</a>
+                <a href="documents.html">Documents</a>
+                <a href="login.html">Logout</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Dashboard -->
+
+    <main>
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-header">
+
+                <div>
+                    <h1>
+                        Welcome,
+                        <span data-user-name>there</span>
+                    </h1>
+
+                    <p id="dashboardSubtitle">
+                        Manage your industrial approvals and compliance from one place.
+                    </p>
+                </div>
+                 
+
+                <a href="business-profile.html" class="profile-btn">
+                    Business Profile
+                </a>
+
+            </div>
+
+
+            <!-- Overview Cards -->
+
+            <div class="overview-container">
+
+                <div class="overview-card">
+                    <h3>Approvals</h3>
+                    <p class="number" id="statApprovals">—</p>
+                    <p>Required approvals</p>
+                </div>
+
+                <div class="overview-card">
+                    <h3>Applications</h3>
+                    <p class="number" id="statApplications">—</p>
+                    <p>Applications in progress</p>
+                </div>
+
+                <div class="overview-card">
+                    <h3>Compliance</h3>
+                    <p class="number" id="statCompliance">—</p>
+                    <p>Tasks pending</p>
+                </div>
+
+                <div class="overview-card">
+                    <h3>Renewals</h3>
+                    <p class="number" id="statRenewals">—</p>
+                    <p>Renewal due soon</p>
+                </div>
+
+            </div>
+
+
+            <!-- Main Features -->
+
+            <h2 class="section-title">
+                Manage Your Business
+            </h2>
+
+
+            <div class="feature-container">
+
+                <a href="approvals.html" class="feature-card">
+
+                    <h3>
+                        Approvals
+                    </h3>
+
+                    <p>
+                        Find and manage government approvals required for your business.
+                    </p>
+
+                </a>
+
+
+                <a href="documents.html" class="feature-card">
+
+                    <h3>
+                        Documents
+                    </h3>
+
+                    <p>
+                        Upload and organize documents required for applications.
+                    </p>
+
+                </a>
+
+
+                <a href="tracking.html" class="feature-card">
+
+                    <h3>
+                        Application Tracking
+                    </h3>
+
+                    <p>
+                        Track the status of your submitted applications.
+                    </p>
+
+                </a>
+
+
+                <a href="compliance.html" class="feature-card">
+
+                    <h3>
+                        Compliance
+                    </h3>
+
+                    <p>
+                        Keep track of important compliance requirements and tasks.
+                    </p>
+
+                </a>
+
+
+                <a href="renewals.html" class="feature-card">
+
+                    <h3>
+                        Renewals
+                    </h3>
+
+                    <p>
+                        Monitor licences and certificates that need renewal.
+                    </p>
+
+                </a>
+
+
+                <a href="schemes.html" class="feature-card">
+
+                    <h3>
+                        Government Schemes
+                    </h3>
+
+                    <p>
+                        Discover government schemes that may be relevant to your business.
+                    </p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 IndustryEase. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/applicant.js"></script>
+
+</body>
+
+</html>

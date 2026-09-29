@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Officer Dashboard - IndustryEase</title>
+
+    <link rel="stylesheet" href="css/officer-dashboard.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body data-page="officer-dashboard">
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                IndustryEase
+            </div>
+
+            <div class="nav-links">
+
+                <a href="officer-dashboard.html" class="active">
+                    Dashboard
+                </a>
+
+                <a href="application-review.html">
+                    Applications
+                </a>
+
+                <a href="queries.html">
+                    Queries
+                </a>
+
+                <a href="inspections.html">
+                    Inspections
+                </a>
+
+                <a href="login.html">
+                    Logout
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <section class="officer-section">
+
+
+            <!-- Page Header -->
+
+            <div class="page-header">
+
+                <h1>
+                    Officer
+                    <span>Dashboard</span>
+                </h1>
+
+                <p>
+                    Review and manage industrial approval applications.
+                </p>
+
+            </div>
+
+
+            <!-- Welcome -->
+
+            <div class="welcome-card">
+
+                <div>
+
+                    <p class="small-text">
+                        Welcome, Officer
+                    </p>
+
+                    <h2>
+                        Department of Industries
+                    </h2>
+
+                    <p>
+                        Review applications, verify documents and update decisions.
+                    </p>
+
+                </div>
+
+                <div class="officer-icon">
+                    O
+                </div>
+
+            </div>
+
+
+            <!-- Statistics -->
+
+            <div class="stats-container">
+
+                <div class="stat-card">
+                    <div class="stat-icon">📋</div>
+                    <div>
+                        <h2 id="officerTotal">—</h2>
+                        <p>Total Applications</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon pending-icon">⏳</div>
+                    <div>
+                        <h2 id="officerPending">—</h2>
+                        <p>Pending Review</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon approved-icon">✓</div>
+                    <div>
+                        <h2 id="officerApproved">—</h2>
+                        <p>Approved</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon rejected-icon">✕</div>
+                    <div>
+                        <h2 id="officerRejected">—</h2>
+                        <p>Rejected</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Applications -->
+
+            <div class="applications-card">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Applications</h2>
+                        <p class="small-text">
+                            Applications submitted for your review.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="officerApplications"></div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 IndustryEase. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/officer.js"></script>
+
+</body>
+
+</html>

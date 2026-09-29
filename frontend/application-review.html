@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Application Review - IndustryEase</title>
+
+    <link rel="stylesheet" href="css/application-review.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body data-page="application-review">
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                IndustryEase
+            </div>
+
+            <div class="nav-links">
+
+                <a href="officer-dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="application-review.html" class="active">
+                    Applications
+                </a>
+
+                <a href="queries.html">
+                    Queries
+                </a>
+
+                <a href="inspections.html">
+                    Inspections
+                </a>
+
+                <a href="login.html">
+                    Logout
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="review-section">
+
+
+            <!-- Back -->
+
+            <a
+                href="officer-dashboard.html"
+                class="back-link"
+            >
+                ← Back to Officer Dashboard
+            </a>
+
+
+            <!-- Header -->
+
+            <div class="page-header">
+
+                <div>
+
+                    <p class="page-label">
+                        Application Review
+                    </p>
+
+                    <h1 id="reviewReference">
+                        Application
+                    </h1>
+
+                    <p>
+                        Review the applicant's project information,
+                        documents and approval requirements.
+                    </p>
+
+                </div>
+
+
+                <span class="status pending">
+                    Pending Review
+                </span>
+
+            </div>
+
+
+            <!-- Applicant Information -->
+
+            <div class="review-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Applicant Information
+                    </h2>
+
+                </div>
+
+
+                <div class="info-grid" id="reviewApplicationInfo">
+                    </div>
+
+            </div>
+
+
+            <!-- Project Details -->
+
+            <div class="review-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Project Details
+                    </h2>
+
+                </div>
+
+
+                <div class="info-grid" id="reviewProjectInfo">
+                    </div>
+
+
+                <div class="description">
+
+                    <span>
+                        Project Description
+                    </span>
+
+                    <p>
+                        Proposed food processing unit for processing
+                        and packaging food products for local and
+                        regional markets.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Documents -->
+
+            <div class="review-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>
+                            Submitted Documents
+                        </h2>
+
+                        <p>
+                            Review the documents submitted by the applicant.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="document-list" id="reviewDocuments">
+                    </div>
+
+            </div>
+
+
+            <!-- Officer Actions -->
+
+            <div class="review-card action-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Officer Actions
+                    </h2>
+
+                    <p>
+                        Select the appropriate action after reviewing
+                        the application.
+                    </p>
+
+                </div>
+
+
+                <div class="action-container">
+
+                    <a href="queries.html" id="actionQuery"
+                       class="action-btn query-btn">
+                        Raise Query
+                    </a>
+
+                    <a href="inspections.html" id="actionInspection"
+                       class="action-btn inspection-btn">
+                        Request Inspection
+                    </a>
+
+                    <a href="decision.html" id="actionDecision"
+                       class="action-btn decision-btn">
+                        Proceed to Decision
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 IndustryEase. All rights reserved.
+        </p>
+
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/officer.js"></script>
+
+</body>
+
+</html>

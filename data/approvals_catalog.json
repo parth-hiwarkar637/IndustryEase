@@ -1,0 +1,199 @@
+[
+  {
+    "id": "approval-business",
+    "slug": "business",
+    "order": 1,
+    "name": "Business Registration",
+    "icon": "🏢",
+    "department": "Department of Industries",
+    "description": "Registration of your business with the appropriate government authority.",
+    "applicable_sectors": ["*"],
+    "minimum_employees": 0,
+    "minimum_investment": 0,
+    "priority": "HIGH",
+    "mandatory": true,
+    "inspection_required": false,
+    "fee": "As applicable",
+    "processing_time": "7-15 Working Days",
+    "eligibility": "New and existing eligible businesses",
+    "licence_prefix": "BR",
+    "validity_months": 0,
+    "documents": [
+      {"key": "identity_proof", "name": "Identity Proof", "hint": "Aadhaar Card / Passport / Voter ID"},
+      {"key": "address_proof", "name": "Address Proof", "hint": "Utility bill / Rent agreement"},
+      {"key": "business_address_proof", "name": "Business Address Proof", "hint": "Ownership or lease document for the premises"},
+      {"key": "pan_card", "name": "PAN Card", "hint": "PAN of the business or the proprietor"},
+      {"key": "constitution_docs", "name": "Business Constitution Documents", "hint": "Partnership deed / MoA / Incorporation certificate"}
+    ],
+    "compliance_items": [
+      {
+        "title": "Annual Business Compliance",
+        "description": "Review and submit annual compliance information for your registered business.",
+        "icon": "🏢",
+        "due_in_days": 90
+      }
+    ]
+  },
+  {
+    "id": "approval-factory",
+    "slug": "factory",
+    "order": 2,
+    "name": "Factory Licence",
+    "icon": "🏭",
+    "department": "Factories / Labour Department",
+    "description": "Licence requirements may apply depending on the nature and size of the industrial operation.",
+    "applicable_sectors": ["manufacturing", "food_processing", "textile", "pharmaceutical", "chemical"],
+    "minimum_employees": 10,
+    "minimum_investment": 0,
+    "priority": "HIGH",
+    "mandatory": true,
+    "inspection_required": true,
+    "fee": "Depends on applicable rules",
+    "processing_time": "Varies by application",
+    "eligibility": "Eligible industrial establishments employing 10 or more workers",
+    "licence_prefix": "FL",
+    "validity_months": 12,
+    "documents": [
+      {"key": "identity_proof", "name": "Identity Proof", "hint": "Aadhaar Card / Passport / Voter ID"},
+      {"key": "factory_plan", "name": "Factory Plan", "hint": "Approved layout of the factory building"},
+      {"key": "site_plan", "name": "Site Plan", "hint": "Plan showing the site and surroundings"},
+      {"key": "machinery_details", "name": "Machinery Details", "hint": "List of machinery and installed capacity"},
+      {"key": "occupier_details", "name": "Occupier / Manager Details", "hint": "Details of the occupier and factory manager"}
+    ],
+    "compliance_items": [
+      {
+        "title": "Factory Licence Validity",
+        "description": "Maintain a valid factory licence for your industrial operation.",
+        "icon": "📄",
+        "due_in_days": 330
+      }
+    ]
+  },
+  {
+    "id": "approval-pollution",
+    "slug": "pollution",
+    "order": 3,
+    "name": "Pollution Control Consent",
+    "icon": "🌱",
+    "department": "State Pollution Control Board",
+    "description": "Consent may be required for industries based on their activities and environmental impact.",
+    "applicable_sectors": ["manufacturing", "food_processing", "chemical", "textile", "pharmaceutical"],
+    "minimum_employees": 0,
+    "minimum_investment": 0,
+    "priority": "HIGH",
+    "mandatory": true,
+    "inspection_required": true,
+    "fee": "Depends on category and applicable rules",
+    "processing_time": "Varies by application",
+    "eligibility": "Industries requiring environmental consent",
+    "licence_prefix": "PCB",
+    "validity_months": 24,
+    "documents": [
+      {"key": "identity_proof", "name": "Identity Proof", "hint": "Aadhaar Card / Passport / Voter ID"},
+      {"key": "land_documents", "name": "Land / Site Documents", "hint": "Ownership or lease papers for the site"},
+      {"key": "project_report", "name": "Project Report", "hint": "Detailed project report covering the activity"},
+      {"key": "process_details", "name": "Process Details", "hint": "Manufacturing process and effluent details"},
+      {"key": "environmental_info", "name": "Environmental Information", "hint": "Emission, effluent and waste handling information"}
+    ],
+    "compliance_items": [
+      {
+        "title": "Pollution Control Compliance",
+        "description": "Submit the required environmental compliance information to the concerned authority.",
+        "icon": "🌱",
+        "due_in_days": 120
+      }
+    ]
+  },
+  {
+    "id": "approval-fire",
+    "slug": "fire",
+    "order": 4,
+    "name": "Fire Safety Approval",
+    "icon": "🔥",
+    "department": "Fire & Emergency Services Department",
+    "description": "Fire safety approval may be required for certain commercial and industrial premises.",
+    "applicable_sectors": ["manufacturing", "food_processing", "chemical", "textile", "pharmaceutical"],
+    "minimum_employees": 0,
+    "minimum_investment": 0,
+    "priority": "MEDIUM",
+    "mandatory": true,
+    "inspection_required": true,
+    "fee": "As applicable",
+    "processing_time": "Varies by application",
+    "eligibility": "Premises covered under applicable fire safety requirements",
+    "licence_prefix": "FIRE",
+    "validity_months": 12,
+    "documents": [
+      {"key": "building_plan", "name": "Building Plan", "hint": "Approved building plan of the premises"},
+      {"key": "fire_safety_plan", "name": "Fire Safety Plan", "hint": "Layout of fire safety equipment and exits"},
+      {"key": "site_plan", "name": "Site Plan", "hint": "Plan showing access roads and open space"}
+    ],
+    "compliance_items": [
+      {
+        "title": "Fire Safety Certificate",
+        "description": "Ensure that the required fire safety certificate remains valid.",
+        "icon": "🔥",
+        "due_in_days": 300
+      }
+    ]
+  },
+  {
+    "id": "approval-power",
+    "slug": "power",
+    "order": 5,
+    "name": "Industrial Power Connection",
+    "icon": "⚡",
+    "department": "State Electricity Distribution Company",
+    "description": "Sanction of an industrial electricity load connection for the project site.",
+    "applicable_sectors": ["*"],
+    "minimum_employees": 0,
+    "minimum_investment": 0,
+    "priority": "MEDIUM",
+    "mandatory": false,
+    "inspection_required": false,
+    "fee": "Based on sanctioned load",
+    "processing_time": "15-30 Working Days",
+    "eligibility": "Industrial premises requiring a sanctioned power load",
+    "licence_prefix": "PWR",
+    "validity_months": 0,
+    "documents": [
+      {"key": "identity_proof", "name": "Identity Proof", "hint": "Aadhaar Card / Passport / Voter ID"},
+      {"key": "land_documents", "name": "Land / Site Documents", "hint": "Ownership or lease papers for the site"},
+      {"key": "load_details", "name": "Connected Load Details", "hint": "Estimated load in kW with equipment list"}
+    ],
+    "compliance_items": []
+  },
+  {
+    "id": "approval-trade",
+    "slug": "trade",
+    "order": 6,
+    "name": "Trade Licence",
+    "icon": "🧾",
+    "department": "Municipal Corporation / Local Body",
+    "description": "Local body permission to carry on trade or business at the project premises.",
+    "applicable_sectors": ["*"],
+    "minimum_employees": 0,
+    "minimum_investment": 0,
+    "priority": "LOW",
+    "mandatory": false,
+    "inspection_required": false,
+    "fee": "As per local body schedule",
+    "processing_time": "7-21 Working Days",
+    "eligibility": "Businesses operating within municipal limits",
+    "licence_prefix": "TL",
+    "validity_months": 12,
+    "documents": [
+      {"key": "identity_proof", "name": "Identity Proof", "hint": "Aadhaar Card / Passport / Voter ID"},
+      {"key": "business_address_proof", "name": "Business Address Proof", "hint": "Ownership or lease document for the premises"},
+      {"key": "property_tax_receipt", "name": "Property Tax Receipt", "hint": "Latest paid receipt for the premises"}
+    ],
+    "compliance_items": [
+      {
+        "title": "Trade Licence Renewal Filing",
+        "description": "File the annual trade licence return with the local body.",
+        "icon": "🧾",
+        "due_in_days": 300
+      }
+    ]
+  }
+]

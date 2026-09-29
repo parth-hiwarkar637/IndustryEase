@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #f8fafc;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 7%;
+
+    background: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1f2937;
+}
+
+
+/* Register Section */
+
+.register-section {
+    min-height: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+.register-box {
+    width: 100%;
+    max-width: 480px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e7eb;
+}
+
+
+/* Register Heading */
+
+.register-box h1 {
+    font-size: 32px;
+    line-height: 1.2;
+
+    text-align: center;
+
+    margin-bottom: 12px;
+
+    color: #1f2937;
+}
+
+.register-box h1 span {
+    display: block;
+
+    color: #2563eb;
+
+    margin-top: 5px;
+}
+
+
+/* Register Description */
+
+.register-box > p {
+    text-align: center;
+
+    color: #64748b;
+
+    margin-bottom: 30px;
+}
+
+
+/* Register Form */
+
+.register-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-box label {
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.register-box input {
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+/* Register Button */
+
+.register-box button {
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* Login Text */
+
+.login-text {
+    margin-top: 20px;
+}
+
+.login-text a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #111827;
+
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .register-box {
+        padding: 30px 20px;
+    }
+
+    .register-box h1 {
+        font-size: 28px;
+    }
+}

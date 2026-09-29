@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Profile - IndustryEase</title>
+
+    <link rel="stylesheet" href="css/business-profile.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body data-page="business-profile">
+
+    <!-- Navbar -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                IndustryEase
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- Business Profile Section -->
+
+    <main>
+
+        <section class="profile-section">
+
+            <div class="profile-box">
+
+                <h1>
+                    Tell Us About Your
+                    <span>Business</span>
+                </h1>
+
+                <p>
+                    Provide your business details to discover relevant approvals and compliance requirements.
+                </p>
+
+
+                <!-- Business Profile Form -->
+
+                <form id="profileForm">
+
+                    <label for="business-name">
+                        Business Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="business-name"
+                        placeholder="Enter business name"
+                        required
+                    >
+
+
+                    <label for="business-type">
+                        Business Type
+                    </label>
+
+                    <select id="business-type" required>
+
+                        <option value="">
+                            Select business type
+                        </option>
+
+                        <option value="manufacturing">
+                            Manufacturing
+                        </option>
+
+                        <option value="service">
+                            Service
+                        </option>
+
+                        <option value="trading">
+                            Trading
+                        </option>
+
+                        <option value="startup">
+                            Startup
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+
+                    <label for="industry">
+                        Industry / Sector
+                    </label>
+
+                    <select id="industry" required>
+
+                        <option value="">
+                            Select industry
+                        </option>
+
+                        <option value="food">
+                            Food Processing
+                        </option>
+
+                        <option value="textile">
+                            Textile
+                        </option>
+
+                        <option value="manufacturing">
+                            Manufacturing
+                        </option>
+
+                        <option value="technology">
+                            Information Technology
+                        </option>
+
+                        <option value="construction">
+                            Construction
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+
+                    <label for="state">
+                        State
+                    </label>
+
+                    <select id="state" required>
+
+                        <option value="">
+                            Select state
+                        </option>
+
+                        <option value="chhattisgarh">
+                            Chhattisgarh
+                        </option>
+
+                        <option value="madhya-pradesh">
+                            Madhya Pradesh
+                        </option>
+
+                        <option value="maharashtra">
+                            Maharashtra
+                        </option>
+
+                        <option value="odisha">
+                            Odisha
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+
+                    <label for="employees">
+                        Number of Employees
+                    </label>
+
+                    <input
+                        type="number"
+                        id="employees"
+                        placeholder="Enter number of employees"
+                        min="1"
+                        required
+                    >
+
+
+                    <button type="submit">
+                        Continue
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <p>© 2026 IndustryEase. All rights reserved.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/applicant.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Application Tracking - IndustryEase</title>
+
+    <link rel="stylesheet" href="css/tracking.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body data-page="tracking">
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                IndustryEase
+            </div>
+
+            <div class="nav-links">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="approvals.html">
+                    Approvals
+                </a>
+
+                <a href="documents.html">
+                    Documents
+                </a>
+
+                <a href="tracking.html" class="active">
+                    Tracking
+                </a>
+
+                <a href="login.html">
+                    Logout
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <section class="tracking-section">
+
+
+            <!-- Page Header -->
+
+            <div class="page-header">
+
+                <h1>
+                    Application
+                    <span>Tracking</span>
+                </h1>
+
+                <p>
+                    Track the status of your government approval application.
+                </p>
+
+            </div>
+
+
+            <!-- Application Summary -->
+
+            <div class="application-card">
+
+                <div class="card-header">
+                    <div>
+                        <h2 id="trackingApprovalName">Application</h2>
+                        <p id="trackingReference"></p>
+                    </div>
+
+                    <span class="status pending" id="currentStatus">Pending</span>
+                </div>
+
+                <div id="trackingSwitcher"></div>
+
+            </div>
+
+
+            <!-- Timeline -->
+
+            <div class="tracking-card">
+
+                <h2>
+                    Application Progress
+                </h2>
+
+
+                <div class="timeline">
+                </div>
+
+
+                <!-- Officer Remarks -->
+
+                <div class="remarks-box" id="remarksBox" style="display: none;">
+
+                    <strong>Officer Remarks</strong>
+
+                    <p id="officerRemarks"></p>
+
+                </div>
+
+
+                <!-- Decision Date -->
+
+                <div class="decision-date" id="decisionDateBox" style="display: none;">
+
+                    <strong>Decision Date</strong>
+
+                    <p id="decisionDate"></p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Application Details -->
+
+            <div class="details-card">
+
+                <h2>
+                    Application Details
+                </h2>
+
+                <div class="details-grid">
+                </div>
+
+            </div>
+
+
+            <!-- Help -->
+
+            <div class="help-section">
+
+                <h2>
+                    Need Help?
+                </h2>
+
+                <p id="helpText">
+                    If your application requires additional information,
+                    you will receive a query from the concerned officer.
+                </p>
+
+
+                <!-- Dashboard Button -->
+
+                <a href="dashboard.html">
+                    Go to Dashboard →
+                </a>
+
+
+                <!-- Compliance Button -->
+
+                <a
+                    href="compliance.html"
+                    id="complianceButton"
+                    style="display: none;"
+                >
+                    Manage Compliance →
+                </a>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 IndustryEase. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+
+    <script src="js/api.js"></script>
+    <script src="js/applicant.js"></script>
+
+</body>
+
+</html>
+

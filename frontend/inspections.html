@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inspections - IndustryEase</title>
+
+    <link rel="stylesheet" href="css/inspections.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body data-page="inspections">
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                IndustryEase
+            </div>
+
+            <div class="nav-links">
+
+                <a href="officer-dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="application-review.html">
+                    Applications
+                </a>
+
+                <a href="queries.html">
+                    Queries
+                </a>
+
+                <a href="inspections.html" class="active">
+                    Inspections
+                </a>
+
+                <a href="login.html">
+                    Logout
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="inspection-section">
+
+
+            <!-- Back -->
+
+            <a
+                href="application-review.html"
+                class="back-link"
+            >
+                ← Back to Application
+            </a>
+
+
+            <!-- Header -->
+
+            <div class="page-header">
+
+                <p class="page-label">
+                    Site Inspection
+                </p>
+
+                <h1>
+                    Schedule
+                    <span>Inspection</span>
+                </h1>
+
+                <p>
+                    Schedule and record an inspection for the selected
+                    industrial application.
+                </p>
+
+            </div>
+
+
+            <!-- Application Summary -->
+
+            <div class="application-card">
+
+                <div class="card-header">
+                    <div>
+                        <h2 id="inspectionApprovalName">Application</h2>
+                        <p id="inspectionReference"></p>
+                    </div>
+
+                    <span class="status pending" id="inspectionAppStatus">Pending</span>
+                </div>
+
+            </div>
+
+
+            <!-- Inspection Form -->
+
+            <div class="inspection-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Inspection Details
+                    </h2>
+
+                    <p>
+                        Enter the details required for the site inspection.
+                    </p>
+
+                </div>
+
+
+                <form id="inspectionForm">
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="inspectionDate">
+                                Inspection Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="inspectionDate"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="inspectionTime">
+                                Inspection Time
+                            </label>
+
+                            <input
+                                type="time"
+                                id="inspectionTime"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="officerName">
+                            Inspecting Officer
+                        </label>
+
+                        <input
+                            type="text"
+                            id="officerName"
+                            placeholder="Enter officer name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="inspectionLocation">
+                            Inspection Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="inspectionLocation"
+                            value="Korba"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="inspectionPurpose">
+                            Inspection Purpose
+                        </label>
+
+                        <select
+                            id="inspectionPurpose"
+                            required
+                        >
+
+                            <option value="">
+                                Select Purpose
+                            </option>
+
+                            <option value="site">
+                                Site Verification
+                            </option>
+
+                            <option value="documents">
+                                Document Verification
+                            </option>
+
+                            <option value="safety">
+                                Safety Verification
+                            </option>
+
+                            <option value="general">
+                                General Inspection
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="inspectionNotes">
+                            Inspection Notes
+                        </label>
+
+                        <textarea
+                            id="inspectionNotes"
+                            rows="5"
+                            placeholder="Enter instructions or notes for the inspection..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-footer">
+
+                        <p>
+                            The inspection information will be
+                            recorded for this application.
+                        </p>
+
+                        <button type="submit">
+                            Schedule Inspection →
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+
+            <!-- Existing Inspection -->
+
+            <div class="inspection-card">
+
+                <div class="card-header">
+                    <div>
+                        <h2>Inspection Status</h2>
+                        <p>Inspections already scheduled for this application.</p>
+                    </div>
+                </div>
+
+                <div id="scheduledInspections"></div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 IndustryEase. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <script src="js/api.js"></script>
+    <script src="js/officer.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Compliance Management | IndustryEase</title>
+
+    <link rel="stylesheet" href="css/compleeance.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body data-page="compliance">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">IndustryEase</div>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="tracking.html">Tracking</a>
+        </div>
+    </nav>
+
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <div>
+                <p class="eyebrow">POST-APPROVAL MANAGEMENT</p>
+
+                <h1>Compliance Management</h1>
+
+                <p class="subtitle">
+                    Track your business compliance requirements,
+                    deadlines and completion status in one place.
+                </p>
+            </div>
+
+            <div class="approval-badge" id="complianceBadge"></div>
+        </section>
+
+
+        <!-- Summary Cards -->
+        <section class="summary-grid">
+
+            <div class="summary-card">
+                <span>Total Compliance</span>
+                <strong id="complianceTotal">—</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Completed</span>
+                <strong id="complianceCompleted">—</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Pending</span>
+                <strong id="compliancePending">—</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Due Soon</span>
+                <strong id="complianceDueSoon">—</strong>
+            </div>
+
+        </section>
+
+
+        <!-- Compliance List -->
+        <section class="compliance-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Compliance Requirements</h2>
+                    <p>Keep your approvals and business obligations up to date.</p>
+                </div>
+            </div>
+
+            <div id="complianceList"></div>
+
+        </section>
+
+
+        <!-- Information Box -->
+        <section class="info-box">
+
+            <div class="info-icon">ℹ</div>
+
+            <div>
+                <h3>Why is compliance important?</h3>
+
+                <p>
+                    Completing required compliances on time helps businesses
+                    maintain valid approvals and avoid delays in future
+                    renewals or inspections.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Navigation -->
+        <div class="bottom-navigation">
+
+            <a href="tracking.html" class="back-btn">
+                ← Back to Tracking
+            </a>
+
+            <a href="renewals.html" class="primary-btn">
+                Manage Renewals →
+            </a>
+
+        </div>
+
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/applicant.js"></script>
+
+</body>
+
+</html>
+

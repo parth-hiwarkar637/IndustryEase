@@ -1,0 +1,182 @@
+/*
+ * app.css
+ * -------
+ * Styles for the pieces the JavaScript adds: inline notices, loading and
+ * empty states, and the few controls that did not exist in the static
+ * mockups. Everything else still comes from each page's own stylesheet.
+ */
+
+:root {
+  --ie-blue: #1d4ed8;
+  --ie-green: #15803d;
+  --ie-amber: #b45309;
+  --ie-red: #b91c1c;
+  --ie-border: #e2e8f0;
+  --ie-muted: #64748b;
+}
+
+/* ---------------------------------------------------------------- notices */
+
+.ie-notice {
+  margin: 0 auto 20px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 1100px;
+  border: 1px solid transparent;
+}
+
+.ie-notice-info {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1e40af;
+}
+
+.ie-notice-success {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+  color: var(--ie-green);
+}
+
+.ie-notice-error {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: var(--ie-red);
+}
+
+/* ------------------------------------------------- loading + empty states */
+
+.ie-loading,
+.ie-empty {
+  padding: 36px 24px;
+  text-align: center;
+  color: var(--ie-muted);
+  background: #fff;
+  border: 1px dashed var(--ie-border);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.ie-empty p {
+  margin: 0 0 14px;
+  font-size: 15px;
+}
+
+.ie-empty-action {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--ie-blue);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ie-empty-action:hover {
+  opacity: 0.9;
+}
+
+/* -------------------------------------------------------------- utilities */
+
+.ie-inline-btn {
+  padding: 8px 16px;
+  border: 1px solid var(--ie-border);
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ie-blue);
+}
+
+.ie-inline-btn:hover {
+  background: #f8fafc;
+}
+
+.ie-inline-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.ie-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.ie-switcher button {
+  padding: 8px 14px;
+  border: 1px solid var(--ie-border);
+  background: #fff;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #334155;
+}
+
+.ie-switcher button.is-active {
+  background: var(--ie-blue);
+  border-color: var(--ie-blue);
+  color: #fff;
+}
+
+.ie-meta {
+  font-size: 13px;
+  color: var(--ie-muted);
+  margin-top: 6px;
+}
+
+.ie-priority {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.ie-priority-high { color: var(--ie-red); }
+.ie-priority-medium { color: var(--ie-amber); }
+.ie-priority-low { color: var(--ie-muted); }
+
+/* The upload control is a <label> wrapping a hidden input on documents.html */
+.document-input {
+  display: none;
+}
+
+.ie-field-error {
+  color: var(--ie-red);
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.ie-query-item,
+.ie-inspection-item {
+  border: 1px solid var(--ie-border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  background: #fff;
+}
+
+.ie-query-item h4,
+.ie-inspection-item h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.ie-query-item p,
+.ie-inspection-item p {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.55;
+}
+
+.ie-answer {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border-left: 3px solid var(--ie-green);
+  border-radius: 4px;
+}

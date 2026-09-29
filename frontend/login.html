@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - IndustryEase</title>
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body data-page="login">
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                IndustryEase
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="login-section">
+
+            <div class="login-box">
+
+                <h1>Welcome Back</h1>
+
+                <p>Login to manage your industrial journey.</p>
+
+
+                <form id="loginForm">
+
+                    <!-- Login Role -->
+
+                    <label>Login As</label>
+
+                    <div class="role-selection">
+
+                        <label class="role-option">
+                            <input
+                                type="radio"
+                                name="role"
+                                value="entrepreneur"
+                                checked
+                            >
+                            Entrepreneur
+                        </label>
+
+                        <label class="role-option">
+                            <input
+                                type="radio"
+                                name="role"
+                                value="officer"
+                            >
+                            Government Officer
+                        </label>
+
+                    </div>
+
+
+                    <!-- Email / Officer ID -->
+
+                    <label for="email">
+                        Email Address / Officer ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="email"
+                        placeholder="Enter your email or officer ID"
+                        required
+                    >
+
+
+                    <!-- Password -->
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+
+                    <button type="submit">
+                        Login
+                    </button>
+
+                </form>
+
+
+                <p class="register-text">
+                    Don't have an account?
+                    <a href="register.html">Create Account</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 IndustryEase. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

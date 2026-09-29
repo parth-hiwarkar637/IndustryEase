@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #f8fafc;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 7%;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #1f2937;
+}
+
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+
+.nav-links a.active {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+/* Main */
+
+.queries-section {
+    padding: 45px 7%;
+    min-height: 700px;
+}
+
+
+/* Back Link */
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Page Header */
+
+.page-header {
+    margin-bottom: 30px;
+}
+
+
+.page-label {
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+.page-header h1 {
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+}
+
+
+.page-header h1 span {
+    color: #2563eb;
+}
+
+
+.page-header > p:last-child {
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+/* Application Card */
+
+.application-card {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+}
+
+
+.label {
+    color: #64748b;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 6px;
+}
+
+
+.application-card h2 {
+    font-size: 20px;
+}
+
+
+.application-card strong {
+    font-size: 15px;
+}
+
+
+/* Query Card */
+
+.query-card,
+.previous-card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+    overflow: hidden;
+}
+
+
+/* Card Header */
+
+.card-header {
+    padding: 25px 30px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.card-header h2 {
+    font-size: 22px;
+
+    margin-bottom: 7px;
+}
+
+
+.card-header p {
+    color: #64748b;
+
+    line-height: 1.5;
+}
+
+
+/* Form */
+
+#queryForm {
+    padding: 30px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 22px;
+}
+
+
+.form-group label {
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Form Footer */
+
+.form-footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+.form-footer p {
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+.form-footer button {
+    padding: 13px 22px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.form-footer button:hover {
+    background: #1d4ed8;
+}
+
+
+/* Previous Queries */
+
+.empty-query {
+    padding: 30px;
+
+    color: #64748b;
+
+    text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #111827;
+
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+
+    .application-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    #queryForm {
+        padding: 25px 20px;
+    }
+
+
+    .card-header {
+        padding: 22px 20px;
+    }
+
+
+    .form-footer {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .form-footer button {
+        width: 100%;
+    }
+
+}

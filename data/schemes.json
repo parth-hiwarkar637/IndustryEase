@@ -1,0 +1,166 @@
+[
+  {
+    "id": "scheme-msme",
+    "slug": "msme",
+    "name": "MSME Business Support",
+    "icon": "₹",
+    "category": "msme finance",
+    "category_label": "MSME",
+    "benefit": "Financial Support",
+    "department": "MSME",
+    "status": "Relevant for your business",
+    "description": "Financial and business support opportunities for eligible micro, small and medium enterprises.",
+    "overview": "This scheme category provides support opportunities for eligible micro, small and medium enterprises. Businesses may receive different forms of assistance depending on the applicable government programme and eligibility conditions.",
+    "benefits": [
+      {"icon": "₹", "title": "Financial Support", "description": "Eligible businesses may receive financial assistance under applicable programmes."},
+      {"icon": "✓", "title": "Business Assistance", "description": "Support may be available for business development and expansion."},
+      {"icon": "↗", "title": "Growth Opportunities", "description": "Government programmes can help eligible businesses access development opportunities."}
+    ],
+    "eligibility": [
+      "Registered micro, small or medium enterprise",
+      "Valid business registration or Udyam registration",
+      "Investment within the applicable MSME limits",
+      "Compliant with applicable statutory requirements"
+    ],
+    "documents_required": [
+      "Business Registration Certificate",
+      "PAN Card",
+      "Bank Account Details",
+      "Project Report"
+    ],
+    "process": [
+      "Confirm your business meets the eligibility conditions",
+      "Prepare the required registration and financial documents",
+      "Submit the application to the concerned department",
+      "Track the application and respond to any queries raised"
+    ],
+    "eligibility_criteria": {
+      "sectors": ["*"],
+      "min_investment": 0,
+      "max_investment": 500000000,
+      "max_employees": 250
+    }
+  },
+  {
+    "id": "scheme-startup",
+    "slug": "startup",
+    "name": "Startup Support Program",
+    "icon": "🚀",
+    "category": "startup",
+    "category_label": "Startup",
+    "benefit": "Startup Assistance",
+    "department": "Department of Industries",
+    "status": "Available for eligible startups",
+    "description": "Support programmes designed to encourage entrepreneurship, innovation and development of new businesses.",
+    "overview": "Startup support programmes may provide assistance for eligible new businesses, innovation activities and entrepreneurship development.",
+    "benefits": [
+      {"icon": "🚀", "title": "Startup Support", "description": "Eligible startups may receive support for business development."},
+      {"icon": "💡", "title": "Innovation", "description": "Programmes may support innovative ideas and technology."},
+      {"icon": "↗", "title": "Business Growth", "description": "Support can help startups develop and expand their operations."}
+    ],
+    "eligibility": [
+      "Recently incorporated or registered business",
+      "Working on an innovative product, process or service",
+      "Within the turnover limits set by the programme",
+      "Not formed by splitting up an existing business"
+    ],
+    "documents_required": [
+      "Incorporation / Registration Certificate",
+      "PAN Card",
+      "Brief Write-up on the Innovation",
+      "Project Report"
+    ],
+    "process": [
+      "Check that the business meets the startup definition",
+      "Prepare the incorporation and innovation documents",
+      "Submit the application with the supporting write-up",
+      "Respond to any clarification sought by the department"
+    ],
+    "eligibility_criteria": {
+      "sectors": ["*"],
+      "max_investment": 100000000,
+      "max_employees": 100
+    }
+  },
+  {
+    "id": "scheme-technology",
+    "slug": "technology",
+    "name": "Technology Development Support",
+    "icon": "💻",
+    "category": "technology",
+    "category_label": "Technology",
+    "benefit": "Technology Upgrade",
+    "department": "Department of Industries",
+    "status": "Relevant for technology adoption",
+    "description": "Opportunities supporting technology adoption, digital transformation and business modernization.",
+    "overview": "Technology development programmes may support eligible businesses in adopting digital tools, improving processes and modernizing their operations.",
+    "benefits": [
+      {"icon": "💻", "title": "Technology Support", "description": "Support may be available for technology adoption."},
+      {"icon": "⚙", "title": "Modernization", "description": "Businesses may improve operational processes using technology."},
+      {"icon": "↗", "title": "Digital Growth", "description": "Technology adoption can support business development."}
+    ],
+    "eligibility": [
+      "Operational business with a registered unit",
+      "Proposed technology upgrade or modernization plan",
+      "Applicable to manufacturing and processing units",
+      "Compliant with applicable statutory requirements"
+    ],
+    "documents_required": [
+      "Business Registration Certificate",
+      "Technology Upgrade Proposal",
+      "Machinery Quotation",
+      "Project Report"
+    ],
+    "process": [
+      "Prepare the technology upgrade proposal",
+      "Obtain quotations for the proposed machinery or software",
+      "Submit the application with the project report",
+      "Track the application and provide any further details sought"
+    ],
+    "eligibility_criteria": {
+      "sectors": ["manufacturing", "food_processing", "textile", "pharmaceutical", "chemical", "it"],
+      "min_investment": 0
+    }
+  },
+  {
+    "id": "scheme-finance",
+    "slug": "finance",
+    "name": "Business Credit Assistance",
+    "icon": "🏦",
+    "category": "finance msme",
+    "category_label": "Finance",
+    "benefit": "Credit Access",
+    "department": "Banking & Finance",
+    "status": "Available for eligible businesses",
+    "description": "Financing-related assistance for eligible businesses to support expansion and working capital requirements.",
+    "overview": "Credit assistance programmes may help eligible businesses access financing for expansion, working capital and other approved business requirements.",
+    "benefits": [
+      {"icon": "🏦", "title": "Credit Assistance", "description": "Eligible businesses may access financing support."},
+      {"icon": "₹", "title": "Financial Access", "description": "Programmes may improve access to business finance."},
+      {"icon": "↗", "title": "Business Expansion", "description": "Financing can support eligible expansion activities."}
+    ],
+    "eligibility": [
+      "Registered business with an operating history or a viable project",
+      "Satisfactory credit standing",
+      "Clearly defined end-use for the credit sought",
+      "Required approvals in place or applied for"
+    ],
+    "documents_required": [
+      "Business Registration Certificate",
+      "PAN Card",
+      "Bank Statements",
+      "Project Report",
+      "Financial Statements"
+    ],
+    "process": [
+      "Prepare the project report and financial statements",
+      "Approach the lending institution with the application",
+      "Provide the requested business and financial documents",
+      "Track the application through to sanction"
+    ],
+    "eligibility_criteria": {
+      "sectors": ["*"],
+      "min_investment": 0
+    }
+  }
+]

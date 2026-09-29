@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #f8fafc;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 7%;
+
+    background: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1f2937;
+}
+
+
+/* Business Profile Section */
+
+.profile-section {
+    min-height: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+.profile-box {
+    width: 100%;
+    max-width: 520px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e7eb;
+}
+
+
+/* Profile Heading */
+
+.profile-box h1 {
+    font-size: 32px;
+    line-height: 1.2;
+
+    text-align: center;
+
+    margin-bottom: 12px;
+
+    color: #1f2937;
+}
+
+.profile-box h1 span {
+    display: block;
+
+    color: #2563eb;
+
+    margin-top: 5px;
+}
+
+
+/* Profile Description */
+
+.profile-box > p {
+    text-align: center;
+
+    color: #64748b;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* Profile Form */
+
+.profile-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-box label {
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.profile-box input,
+.profile-box select {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    background: white;
+}
+
+
+/* Continue Button */
+
+.profile-box button {
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #111827;
+
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .profile-box {
+        padding: 30px 20px;
+    }
+
+    .profile-box h1 {
+        font-size: 28px;
+    }
+}

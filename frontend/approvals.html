@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Approvals - IndustryEase</title>
+
+    <link rel="stylesheet" href="css/approvals.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body data-page="approvals">
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                IndustryEase
+            </div>
+
+            <div class="nav-links">
+
+                <a href="dashboard.html">Dashboard</a>
+                <a href="project.html">Project</a>
+                <a href="approvals.html" class="active">Approvals</a>
+                <a href="documents.html">Documents</a>
+                <a href="login.html">Logout</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Approvals Section -->
+
+    <main>
+
+        <section class="approvals-section">
+
+
+            <!-- Back -->
+
+            <a href="project.html" class="back-link">
+                ← Back to Project
+            </a>
+
+
+            <!-- Page Header -->
+
+            <div class="page-header">
+
+                <h1>
+                    Industrial
+                    <span>Approvals</span>
+                </h1>
+
+                <p>
+                    Review the approvals that may be applicable to your industrial project.
+                </p>
+
+            </div>
+
+
+            <!-- Project Summary -->
+
+            <div class="project-summary">
+                <div id="projectSummary"></div>
+            </div>
+
+
+            <!-- Recommendation Heading -->
+
+            <div class="approval-heading">
+
+                <h2>
+                    Potentially Applicable Approvals
+                </h2>
+
+                <p>
+                    Based on the project information provided, the following
+                    approvals may be relevant. Check the eligibility details
+                    before applying.
+                </p>
+
+            </div>
+
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="approvalSearch"
+                    placeholder="Search approval..."
+                >
+
+                <button type="button" id="approvalSearchBtn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- Approval Cards -->
+
+            <div class="approval-container" id="approvalContainer">
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 IndustryEase. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+
+    <script src="js/api.js"></script>
+    <script src="js/applicant.js"></script>
+
+</body>
+
+</html>

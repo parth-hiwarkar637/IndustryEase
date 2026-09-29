@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Documents - IndustryEase</title>
+
+    <link rel="stylesheet" href="css/documents.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body data-page="documents">
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                IndustryEase
+            </div>
+
+            <div class="nav-links">
+
+                <a href="dashboard.html">Dashboard</a>
+
+                <a href="project.html">Project</a>
+
+                <a href="approvals.html">Approvals</a>
+
+                <a href="documents.html" class="active">
+                    Documents
+                </a>
+
+                <a href="tracking.html">
+                    Tracking
+                </a>
+
+                <a href="login.html">
+                    Logout
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="documents-section">
+
+            <a
+                href="approval-details.html?type=business"
+                class="back-link"
+            >
+                ← Back to Approval
+            </a>
+
+
+            <div class="page-header">
+
+                <h1>
+                    Document
+                    <span>Submission</span>
+                </h1>
+
+                <p>
+                    Upload the required documents to proceed with your
+                    approval application.
+                </p>
+
+            </div>
+
+
+            <!-- Application Information -->
+
+            <div class="application-card">
+
+                <div class="card-header">
+                    <div>
+                        <h2 id="documentsApprovalName">Application</h2>
+                        <p id="documentsProjectName"></p>
+                    </div>
+
+                    <span class="status pending" id="applicationStatus">
+                        Documents Pending
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- Documents -->
+
+            <div class="documents-card">
+
+                <div class="card-header">
+                    <div>
+                        <h2>Required Documents</h2>
+                        <p>
+                            Upload clear and valid documents in
+                            PDF, JPG or PNG format.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="documentList"></div>
+
+                <!-- Submit -->
+
+                <div class="submit-section">
+
+                    <p id="submitMessage">
+                        Upload all required documents before submitting.
+                    </p>
+
+                    <button id="submitButton" disabled>
+                        Submit Application →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 IndustryEase. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <script src="js/api.js"></script>
+    <script src="js/applicant.js"></script>
+
+</body>
+
+</html>

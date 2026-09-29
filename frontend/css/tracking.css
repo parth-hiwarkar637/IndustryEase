@@ -1,0 +1,511 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #f8fafc;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 7%;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1f2937;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #2563eb;
+}
+
+
+/* Main */
+
+main {
+    min-height: 700px;
+}
+
+.tracking-section {
+    padding: 50px 7%;
+}
+
+
+/* Page Header */
+
+.page-header {
+    margin-bottom: 35px;
+}
+
+.page-header h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.page-header h1 span {
+    color: #2563eb;
+}
+
+.page-header p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+
+/* Application Card */
+
+.application-card {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 20px;
+
+    background: white;
+
+    padding: 25px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+}
+
+.label {
+    color: #64748b;
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+.application-card h2 {
+    font-size: 20px;
+}
+
+.application-card h3 {
+    font-size: 17px;
+}
+
+
+/* Status */
+
+.status {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* Pending */
+
+.status.pending {
+    background: #fef3c7;
+
+    color: #92400e;
+}
+
+
+/* Approved */
+
+.status.approved {
+    background: #dcfce7;
+
+    color: #166534;
+}
+
+
+/* Rejected */
+
+.status.rejected {
+    background: #fee2e2;
+
+    color: #991b1b;
+}
+
+
+/* More Information */
+
+.status.warning {
+    background: #fef3c7;
+
+    color: #92400e;
+}
+
+
+/* Tracking Card */
+
+.tracking-card {
+    background: white;
+
+    padding: 30px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+}
+
+.tracking-card h2 {
+    margin-bottom: 30px;
+}
+
+
+/* Timeline */
+
+.timeline {
+    position: relative;
+
+    padding-left: 15px;
+}
+
+
+/* Vertical Line */
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 17px;
+
+    top: 20px;
+
+    bottom: 20px;
+
+    width: 2px;
+
+    background: #e5e7eb;
+}
+
+
+/* Timeline Item */
+
+.timeline-item {
+    position: relative;
+
+    display: flex;
+
+    gap: 20px;
+
+    padding-bottom: 35px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+
+/* Timeline Icon */
+
+.timeline-icon {
+    position: relative;
+
+    z-index: 2;
+
+    width: 36px;
+
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e5e7eb;
+
+    color: #64748b;
+
+    font-weight: bold;
+}
+
+
+/* Completed */
+
+.timeline-item.completed .timeline-icon {
+    background: #2563eb;
+
+    color: white;
+}
+
+
+/* Active */
+
+.timeline-item.active .timeline-icon {
+    background: #dbeafe;
+
+    color: #2563eb;
+
+    border: 2px solid #2563eb;
+}
+
+
+/* Timeline Content */
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-content h3 {
+    margin-bottom: 7px;
+
+    font-size: 17px;
+}
+
+.timeline-content p {
+    color: #64748b;
+
+    line-height: 1.6;
+
+    margin-bottom: 7px;
+}
+
+.timeline-content span {
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* Officer Remarks */
+
+.remarks-box {
+    margin-top: 18px;
+
+    padding: 18px;
+
+    background: #f8fafc;
+
+    border-left: 4px solid #2563eb;
+
+    border-radius: 8px;
+}
+
+.remarks-box strong {
+    display: block;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+
+    color: #1f2937;
+}
+
+.remarks-box p {
+    margin: 0;
+
+    color: #475569;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+/* Decision Date */
+
+.decision-date {
+    margin-top: 15px;
+
+    padding: 15px 18px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+}
+
+.decision-date strong {
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+
+    color: #64748b;
+}
+
+.decision-date p {
+    margin: 0;
+
+    color: #1f2937;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* Details Card */
+
+.details-card {
+    background: white;
+
+    padding: 30px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+}
+
+.details-card h2 {
+    margin-bottom: 25px;
+}
+
+.details-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.details-grid > div {
+    padding: 18px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+}
+
+
+/* Help Section */
+
+.help-section {
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.help-section h2 {
+    margin-bottom: 10px;
+}
+
+.help-section p {
+    color: #64748b;
+
+    line-height: 1.6;
+
+    margin-bottom: 18px;
+}
+
+.help-section a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #111827;
+
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .tracking-section {
+        padding: 40px 7%;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .application-card {
+        grid-template-columns: 1fr;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tracking-card {
+        padding: 22px;
+    }
+
+    .remarks-box {
+        padding: 15px;
+    }
+
+}

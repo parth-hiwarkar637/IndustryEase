@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+*.tmp
+
+# Uploaded files and generated data are local to each run
+uploads/*
+!uploads/.gitkeep
+data/users.json
+data/business_profiles.json
+data/projects.json
+data/applications.json
+data/approval_steps.json
+data/documents.json
+data/compliance.json
+data/renewals.json
+data/inspections.json
+data/queries.json
+data/counters.json
